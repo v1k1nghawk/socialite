@@ -23,7 +23,7 @@ public class Content extends MongoDataObject {
     }
 
     public Content(final User author, 
-    		final String message, final JSONParam data) {
+    		final String message, final JSONParam data, csfle) {
         super();
         _dbObject.put(ID_KEY, new ObjectId());
         _dbObject.put(AUTHOR_KEY, author.getUserId());
